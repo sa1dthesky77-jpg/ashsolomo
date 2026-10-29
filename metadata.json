@@ -1,0 +1,6 @@
+{
+  "name": "prod by. Ash Solomo",
+  "description": "음악 프로듀서 prod by. Ash Solomo의 미니멀 비트 라이선스 상태 확인 서비스",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+/* Classic Korean & English DOS / Windows Command Prompt Terminal Font */
+@font-face {
+  font-family: 'NeoDunggeunmo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/NeoDunggeunmo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --bg-primary: #06020c;
+    --text-primary: #f3e8ff;
+    --text-secondary: #c084fc;
+    --purple-electric: #a855f7;
+    --purple-neon: #d946ef;
+    --blue-violet: #6366f1;
+    --mint-status: #2dd4bf;
+    --pink-status: #f43f5e;
+    --amber-status: #f59e0b;
+  }
+
+  /* Universal DOS Terminal / Windows CMD Font Enforcement */
+  *,
+  *::before,
+  *::after {
+    font-family: 'NeoDunggeunmo', 'VT323', Consolas, 'Lucida Console', 'Courier New', monospace !important;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    background-color: #05020a;
+    color: #f3e8ff;
+    font-family: 'NeoDunggeunmo', 'VT323', Consolas, 'Lucida Console', 'Courier New', monospace !important;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    overflow-x: hidden;
+  }
+
+  input,
+  button,
+  select,
+  textarea,
+  code,
+  pre {
+    font-family: 'NeoDunggeunmo', 'VT323', Consolas, 'Lucida Console', 'Courier New', monospace !important;
+  }
+}
+
+/* Slightly larger font scale for improved DOS terminal pixel font legibility */
+.text-\[9px\] { font-size: 11px !important; }
+.text-\[10px\] { font-size: 12px !important; }
+.text-\[11px\] { font-size: 13px !important; }
+.text-xs { font-size: 14px !important; }
+.text-sm { font-size: 15.5px !important; }
+.text-base { font-size: 17px !important; }
+.text-lg { font-size: 19.5px !important; }
+.text-xl { font-size: 22px !important; }
+.text-2xl { font-size: 26px !important; }
+.text-3xl { font-size: 32px !important; }
+
+/* Retro Pixel / DOS Terminal Font Helper */
+.font-pixel,
+.font-mono {
+  font-family: 'NeoDunggeunmo', 'VT323', Consolas, 'Lucida Console', 'Courier New', monospace !important;
+}
+
+/* Retro Windows 98/XP 3D Beveled Borders with Purple Neon Cyber Glow */
+.retro-window {
+  background: #090414;
+  border-top: 2px solid #a855f7;
+  border-left: 2px solid #a855f7;
+  border-right: 2px solid #2e1065;
+  border-bottom: 2px solid #2e1065;
+  box-shadow: 0 10px 35px -5px rgba(147, 51, 234, 0.25), 0 0 1px 1px rgba(168, 85, 247, 0.3);
+}
+
+.retro-titlebar {
+  background: linear-gradient(90deg, #4c1d95 0%, #6366f1 50%, #2e1065 100%);
+  border-bottom: 1px solid #7c3aed;
+}
+
+.retro-btn {
+  background: #140b27;
+  border-top: 1.5px solid #a855f7;
+  border-left: 1.5px solid #a855f7;
+  border-right: 2px solid #2e1065;
+  border-bottom: 2px solid #2e1065;
+  transition: all 0.08s ease;
+}
+
+.retro-btn:hover {
+  background: #20113f;
+  border-color: #c084fc;
+}
+
+.retro-btn:active {
+  border-top: 2px solid #2e1065;
+  border-left: 2px solid #2e1065;
+  border-right: 1.5px solid #a855f7;
+  border-bottom: 1.5px solid #a855f7;
+  transform: translate(1px, 1px);
+}
+
+.retro-inset {
+  background: #040108;
+  border-top: 1.5px solid #1a0b33;
+  border-left: 1.5px solid #1a0b33;
+  border-right: 1.5px solid #581c87;
+  border-bottom: 1.5px solid #581c87;
+}
+
+/* Subtle CRT Scanline overlay effect */
+.crt-overlay {
+  background: linear-gradient(
+    rgba(18, 16, 26, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+/* Purple Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #090314;
+  border-left: 1px solid #2e1065;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b0764;
+  border: 1px solid #7e22ce;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #581c87;
+  border-color: #a855f7;
+}
